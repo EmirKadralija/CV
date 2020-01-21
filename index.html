@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>S6 555074 OLB Intergrated</title>
-  </head>
-  <style>
-	@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-	.h1Main{
-		font-family: 'Montserrat', sans-serif;
-		text-align: center;
-		color: white;
-		}
-		body{
-		background-color:#4F646F; 
-		}
-		.hrCust{
-		color: white;
-		border-style: solid;
-		width: 30%;
-		}
-	  	.h2Cust{
-		font-family: 'Montserrat', sans-serif;
-		text-align: center;
-		color: white;
-	  	}
-	  	.aOlbCust{
-	  	text-decoration: none;
-		color: white;
-	  	}
-	  	.aOlbCust:hover{
-		color: #F86624;
-		  }
-		.navBar li{
-		font-family: 'Montserrat', sans-serif;
-		display:inline-block;
-		text-align: center;
-		padding-right: 50px;
-		}
-		.navBar li:hover{
-		color: red;	
-		}
-		.navBar{
-		font-family: 'Montserrat', sans-serif;
-		text-align:center;
-		font-decoration: none;
-		}
-		.obCont{
-		margin: auto;
-		position: relative;
-		height: 800px;
-		width: 800px;
-		}
-  </style>
-  
+
+<head>
+  <meta charset="utf-8">
+  <title>S6 555074 OLB Intergrated</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+  .h1Main {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    background-color: #4F646F;
+  }
+
+  .hrCust {
+    color: white;
+    border-style: solid;
+    width: 30%;
+  }
+
+  .h2Cust {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+  }
+
+  .aOlbCust {
+    text-decoration: none;
+    color: white;
+  }
+
+  .aOlbCust:hover {
+    color: #F86624;
+  }
+
+  .navBar li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding-right: 50px;
+  }
+
+  .navBar li:hover {
+    color: red;
+  }
+
+  .navBar {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-decoration: none;
+  }
+
+  .obCont {
+    margin: auto;
+    position: relative;
+    height: 800px;
+    width: 800px;
+  }
+</style>
+
 <body>
   <h1 class="h1Main">555074 Intergrated OLB Page </h1>
   <hr class="hrCust">
 
-	<ul class="navBar">
-		<a href="/PPSOLB/index.html" class="aOlbCust"> <li>  Home Page </a></li>
-		<a href="http://www.rushcliff.com" class="aOlbCust"> <li> Rushcliff </a></li>
-	</ul>
-	<hr class="hrCust">
-		<h2 class="h2Cust"> Please complete your booking below </h2>
-			<div class="obCont">	 
-  				<div id="ob-container" ></div>
- 					 </div>
- 						 </body>
-  
-  <footer>
+  <ul class="navBar">
+    <a href="/PPSOLB/index.html" class="aOlbCust">
+      <li> Home Page
+    </a></li>
+    <a href="http://www.rushcliff.com" class="aOlbCust">
+      <li> Rushcliff
+    </a></li>
+  </ul>
+  <hr class="hrCust">
+  <h2 class="h2Cust"> Please complete your booking below </h2>
+  <div class="obCont">
+    <div id="ob-container"></div>
+  </div>
+</body>
+
+<footer>
   <script type="text/javascript">
-	function ppsOnlineBooking() {
-		new OnlineBooking({
-			container: "ob-container", 
-			id: 555074,
-			appointmentType: 'EMIR45TEST'
-		});
-	}
-	(function() {
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "https://ob.rushcliff.com/status-check", true);
-		xhr.onreadystatechange = function() {
-			if(xhr.readyState == 4) {
-				if(xhr.status == 200 && xhr.responseText == "live") {
-					var script = document.createElement("script");
-					script.src = "https://ob.rushcliff.com/js/obv4.js";
-					document.head.appendChild(script);
-				} else {
-					document.getElementById("ob-container").innerHTML = "<p>Our online booking service is currently unavailable. Please call, email or try again later.</p>";
-				}
-			}
-		}
-		xhr.send();
-	})();
-	</script>
-  </footer>
+    function ppsOnlineBooking() {
+      new OnlineBooking({
+        container: "ob-container",
+        id: 555074,
+        appointmentType: 'EMIR45TEST'
+      });
+    }
+    (function() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://ob.rushcliff.com/status-check", true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          if (xhr.status == 200 && xhr.responseText == "live") {
+            var script = document.createElement("script");
+            script.src = "https://ob.rushcliff.com/js/obv4.js";
+            document.head.appendChild(script);
+          } else {
+            document.getElementById("ob-container").innerHTML = "<p>Our online booking service is currently unavailable. Please call, email or try again later.</p>";
+          }
+        }
+      }
+      xhr.send();
+    })();
+  </script>
+</footer>
+
 </html>
