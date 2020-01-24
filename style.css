@@ -11,7 +11,7 @@
   }
 
   /*------------------------------------*\
-			Text Styling
+	Text Styling
   \*------------------------------------*/
 
   .h1Main {
@@ -36,7 +36,7 @@
     color: #F86624;
   }
   /*------------------------------------*\
-			Nav Bar
+	Nav Bar
   \*------------------------------------*/
   .navBar li {
     font-family: 'Montserrat', sans-serif;
@@ -55,7 +55,7 @@
     font-decoration: none;
   }
   /*------------------------------------*\
-			OLB Container 
+	OLB Container 
   \*------------------------------------*/
   .obCont {
     margin: auto;
@@ -65,55 +65,50 @@
   }
   
   /*------------------------------------*\
-			Rushcliff Logo Section 
+	Rushcliff Logo Section 
   \*------------------------------------*/
- #rBlue{
-  width: 100px;
+#rBlue{
+ width: 70px;
   height: 20px;
   background-color: blue;
   position: absolute;
   display: inline;
-  left: 100px;
+  left: 35%;
   }
   #rPurple{
-  width: 100px;
+  width: 70px;
   height: 20px;
   background-color: purple;
   position: absolute;
   display: inline;
-  left: 200px;
+  left: 40%;
   
   }
   #rLblue{
-  width: 100px;
+  width: 70px;
   height: 20px;
   background-color: lightblue;
   position: absolute;
- left: 300px;
+ left: 45%;
   }
   #rRed{
-  width: 100px;
+  width: 70px;
   height: 20px;
   background-color: red;
   position: absolute;
-  left: 400px;
+  left: 50%;
   }
   #rGreen{
-  width: 100px;
+  width: 70px;
   height: 20px;
   background-color: green;
   position: absolute;
- left: 500px;
+ left: 55%;
   }
   #rOrange{
-  width: 100px;
+  width: 70px;
   height: 20px;
   background-color: orange;
   position: absolute;
- left: 600px;
+ left: 60%;
   }
-  
-  #rushcliffLogo{
-  margin-top: 10px;
-  left: 20px;
-  position: float;}
