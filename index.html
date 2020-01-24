@@ -15,13 +15,9 @@
 
 </head>
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-  .h1Main {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: white;
-  }
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
   body {
     background-color: #537ec5;
@@ -31,6 +27,16 @@
     color: white;
     border-style: solid;
     width: 30%;
+  }
+
+  /*------------------------------------*\
+			Text Styling
+  \*------------------------------------*/
+
+  .h1Main {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
   }
 
   .h2Cust {
@@ -48,7 +54,9 @@
   .aOlbCust:hover {
     color: #F86624;
   }
-
+  /*------------------------------------*\
+			Nav Bar
+  \*------------------------------------*/
   .navBar li {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
@@ -65,7 +73,9 @@
     text-align: center;
     font-decoration: none;
   }
-
+  /*------------------------------------*\
+			OLB Container 
+  \*------------------------------------*/
   .obCont {
     margin: auto;
     position: relative;
@@ -73,53 +83,59 @@
     width: 800px;
   }
   
+  /*------------------------------------*\
+			Rushcliff Logo Section 
+  \*------------------------------------*/
  #rBlue{
- width: 70px;
+  width: 100px;
   height: 20px;
   background-color: blue;
   position: absolute;
   display: inline;
-  left: 35%;
+  left: 100px;
   }
   #rPurple{
-  width: 70px;
+  width: 100px;
   height: 20px;
   background-color: purple;
   position: absolute;
   display: inline;
-  left: 40%;
+  left: 200px;
   
   }
   #rLblue{
-  width: 70px;
+  width: 100px;
   height: 20px;
   background-color: lightblue;
   position: absolute;
- left: 45%;
+ left: 300px;
   }
   #rRed{
-  width: 70px;
+  width: 100px;
   height: 20px;
   background-color: red;
   position: absolute;
-  left: 50%;
+  left: 400px;
   }
   #rGreen{
-  width: 70px;
+  width: 100px;
   height: 20px;
   background-color: green;
   position: absolute;
- left: 55%;
+ left: 500px;
   }
   #rOrange{
-  width: 70px;
+  width: 100px;
   height: 20px;
   background-color: orange;
   position: absolute;
- left: 60%;
+ left: 600px;
   }
   
-
+  #rushcliffLogo{
+  margin-top: 10px;
+  left: 20px;
+  position: float;}
 </style>
 
 <body>
@@ -131,21 +147,18 @@
       <li> Home Page
     </a></li>
     <a href="http://www.rushcliff.com" class="aOlbCust">
-      <li> Rushcliff 
+      <li> Rushcliff
     </a></li>
-	<li>
-		<a class="aOlbCust"> FAQ </a>
-	</li>
   </ul>
   <hr class="hrCust">
-  
+  <div id="rushcliffLogo">
   <div id="rBlue"></div>
   <div id="rPurple"></div>
   <div id="rLblue"></div>
  <div id="rRed"></div>
  <div id="rGreen"></div>
  <div id="rOrange"></div>
-
+ </div>
   
   <h2 class="h2Cust"> Please complete your booking below </h2>
   <div class="obCont">
