@@ -154,3 +154,10 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.button{
+ font-family: 'Montserrat', sans-serif;
+border: none;
+	background-color: #537ec5;
+	color: white;
+}
