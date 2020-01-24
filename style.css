@@ -160,4 +160,8 @@
 border: none;
 	background-color: #537ec5;
 	color: white;
+	font-size: inherit;
+}
+#myBtn:hover{
+   color: #F86624;
 }
