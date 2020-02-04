@@ -3,11 +3,13 @@
 
 #topSection{
  background-color: #537ec5;
+	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 }
  #midSection{
    
 	  font-family: 'Montserrat', sans-serif;
+	  background-color: #7dcfb6;
   }
 
   .hrCust {
