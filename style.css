@@ -36,6 +36,11 @@
   .aOlbCust:hover {
     color: #F86624;
   }
+
+.importantP{
+font-weight: bold;
+	color: black;
+}
   /*------------------------------------*\
 	Nav Bar
   \*------------------------------------*/
