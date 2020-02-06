@@ -16,6 +16,8 @@ position: relative;
    
 	  font-family: 'Montserrat', sans-serif;
 	  background-color: #7dcfb6;
+	 position: relative;
+	 bottom: 21px;
   }
 
   .hrCust {
