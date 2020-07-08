@@ -85,6 +85,7 @@ Hello there, enjoy this image of a bunny rabbit
   </div>
 	
 </div>
+<div class="bottomBit"></div>
 </body>
 
 <footer>
@@ -115,34 +116,7 @@ Hello there, enjoy this image of a bunny rabbit
       xhr.send();
     })();
   </script>
-	<script>
-		
-		<script defer type="text/javascript">
-    function ppsOnlineBooking() {
-      new OnlineBooking({
-        container: "ob-container",
-        id: 555074,
-      
-	appointmentType:  'EMIR45TEST',
-      });
-    }
-    (function() {
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "https://ob.rushcliff.com/status-check", true);
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4) {
-          if (xhr.status == 200 && xhr.responseText == "live") {
-            var script = document.createElement("script");
-            script.src = "https://ob.rushcliff.com/js/obv4.js";
-            document.head.appendChild(script);
-          } else {
-            document.getElementById("ob-container").innerHTML = "<p>Our online booking service is currently unavailable. Please call, email or try again later.</p>";
-          }
-        }
-      }
-      xhr.send();
-    })();
-  </script>
+
 	<script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -171,13 +145,6 @@ window.onclick = function(event) {
 }
 </script>
 	
-<div id="footer">TEST PAGE!!
-	<p> This is a fixed Div </p>
-	<p> With a little JavaScript! </p>
-	
-	<button type="button" id="closeButton" onclick="document.getElementById('footer').style.display='none'">Go Away!</button>
-	
-	</div>	
 </footer>
 
 </html>
