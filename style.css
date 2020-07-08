@@ -85,10 +85,11 @@ font-weight: bold;
 	OLB Container 
   \*------------------------------------*/
   .obCont {
-    margin: auto;
-    position: relative;
-    height: 800px;
-    width: 800px;
+        margin: 0 auto;
+    width: 90vw;
+    max-width: 1400px;
+    margin-bottom: 35px;
+    box-sizing: border-box;
   }
 .modelMain{
  text-align: center;
