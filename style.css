@@ -25,6 +25,14 @@ position: relative;
 	 bottom: 21px;
   }
 
+.bottomBit{
+    background-color: #537ec5;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+	height:100px;
+	width:100px;
+}
+
   .hrCust {
     color: white;
     border-style: solid;
