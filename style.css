@@ -87,7 +87,6 @@ font-weight: bold;
   .navBar {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-decoration: none;
   }
   /*------------------------------------*\
 	OLB Container 
@@ -103,126 +102,6 @@ font-weight: bold;
  text-align: center;
 }
   
-  /*------------------------------------*\
-	Logo Section 
-  \*------------------------------------*/
-#rBlue{
- width: 70px;
-  height: 20px;
-  background-color: blue;
-  position: absolute;
-  display: inline;
-  left: 35%;
-  }
-  #rPurple{
-  width: 70px;
-  height: 20px;
-  background-color: purple;
-  position: absolute;
-  display: inline;
-  left: 40%;
-  
-  }
-  #rLblue{
-  width: 70px;
-  height: 20px;
-  background-color: lightblue;
-  position: absolute;
- left: 45%;
-  }
-  #rRed{
-  width: 70px;
-  height: 20px;
-  background-color: red;
-  position: absolute;
-  left: 50%;
-  }
-  #rGreen{
-  width: 70px;
-  height: 20px;
-  background-color: green;
-  position: absolute;
- left: 55%;
-  }
-  #rOrange{
-  width: 70px;
-  height: 20px;
-  background-color: orange;
-  position: absolute;
- left: 60%;
-  }
-
-  /*------------------------------------*\
-	Modal
-  \*------------------------------------*/
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#myBtn{
- font-family: 'Montserrat', sans-serif;
-border: none;
-	background-color: #537ec5;
-	color: white;
-	font-size: inherit;
-}
-#myBtn:hover{
-   color: #F86624;
-}
-
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 20%;
-}
-
-#footer {
-    background: #0070FF;
-    line-height: 2;
-    text-align: center;
-    color: #042E64;
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-shadow: 0 1px 0 #84BAFF;
-    box-shadow: 0 0 15px #00214B;
-}
-
   /*------------------------------------*\
 	Button Footer
   \*------------------------------------*/
