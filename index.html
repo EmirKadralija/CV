@@ -43,6 +43,12 @@ Hello there, enjoy this image of a bunny rabbit
       new OnlineBooking({
        container: "ob-container", 
        id: 555074,
+let slots = document.getElementsByClassName('appt-main')
+
+Array.prototype.forEach.call(slots, function(slot) {
+    slotText = slot.innerText
+    slot.innerText = slotText.replace(slotText,slotText.split("|")[0])
+})
       });
     }
     (function() {
