@@ -57,6 +57,7 @@ Hello there, enjoy this image of a bunny rabbit
 				if(xhr.status == 200 && xhr.responseText == "live") {
 					var script = document.createElement("script");
 					script.src = "https://ob.rushcliff.com/js/obv4.js";
+					removeElements( document.querySelectorAll(".cost") );
 					document.head.appendChild(script);
 				} else {
 					document.getElementById("ob-container").innerHTML = "<p>Our online booking service is currently unavailable. Please call, email or try again later.</p>";
