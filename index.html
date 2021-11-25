@@ -15,11 +15,16 @@ Hello there, enjoy this image of a bunny rabbit
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/PPSOLB/style.css">
 <script>
-  function myFunction() {
+ function myFunction() {
   var iframe = document.getElementById("ob-container");
   var elmnt = iframe.contentWindow.document.getElementById("search-submit");
   elmnt.style.display = "none";
 }
+	document.onreadystatechange = function(){
+    if (document.readyState === "complete") {
+        myFunction();
+    }}
+	
 	</script>
 </head>
 	
