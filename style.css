@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 html, body {
   height: 100%;
@@ -10,16 +10,17 @@ position: relative;
 	margin: 0;
 	padding: 0;
 	bottom: 21px;
+	font-family: 'PT Sans', sans-serif;
 }
 
 #topSection{
  background-color: #537ec5;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	
 }
  #midSection{
    
-	  font-family: 'Montserrat', sans-serif;
+	  
 	  background-color: white;
 	 position: relative;
 	 bottom: 21px;
@@ -28,7 +29,7 @@ position: relative;
 .bottomBit{
     background-color: #537ec5;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    
 	height:100px;
 	width:100px;
 }
@@ -44,13 +45,13 @@ position: relative;
   \*------------------------------------*/
 
   .h1Main {
-    font-family: 'Montserrat', sans-serif;
+    
     text-align: center;
     color: white;
   }
 
   .h2Cust {
-    font-family: 'Montserrat', sans-serif;
+  
     text-align: center;
     color: white;
 	margin-top:35px;
@@ -74,7 +75,7 @@ font-weight: bold;
 	Nav Bar
   \*------------------------------------*/
   .navBar li {
-    font-family: 'Montserrat', sans-serif;
+    
     display: inline-block;
     text-align: center;
     padding-right: 50px;
@@ -85,7 +86,7 @@ font-weight: bold;
   }
 
   .navBar {
-    font-family: 'Montserrat', sans-serif;
+    
     text-align: center;
   }
   /*------------------------------------*\
