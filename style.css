@@ -19,9 +19,7 @@ position: relative;
 	
 }
  #midSection{
-   
-	  
-	  background-color: white;
+	  background-color: rgb(77, 77, 77);
 	 position: relative;
 	 bottom: 21px;
   }
@@ -108,15 +106,3 @@ font-weight: bold;
  text-align: center;
 }
   
-  /*------------------------------------*\
-	Button Footer
-  \*------------------------------------*/
-
-#closeButton{
-width: 200px;
-height: 60px;
-	position: relative;
-	bottom: 20px;
-	border-style: none;
-	border-radius: 5px;
-}
