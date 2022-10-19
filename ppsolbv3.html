@@ -27,6 +27,7 @@
   
 	<div id="midSection">
     		<div id="ob-container">
+			<div id="ob-container-2">
     	</div>
 	</div>
 
@@ -53,6 +54,32 @@
 					document.head.appendChild(script);
 				} else {
 					document.getElementById("ob-container").innerHTML = "<p>Our online booking service is currently unavailable. Please call, email or try again later.</p>";
+				}
+			}
+		}
+		xhr.send();
+	})();
+	</script>
+	
+	<script type="text/javascript">
+	function ppsOnlineBooking() {
+		new OnlineBooking({
+			container: "ob-container", 
+			id: 222222,
+			appointmentType: "INITIAL ASSESSMENT"
+		});
+	}
+	(function() {
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "https://ob.rushcliff.com/status-check", true);
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState == 4) {
+				if(xhr.status == 200 && xhr.responseText == "live") {
+					var script = document.createElement("script");
+					script.src = "https://ob.rushcliff.com/js/obv4.js";
+					document.head.appendChild(script);
+				} else {
+					document.getElementById("ob-container-2").innerHTML = "<p>Our online booking service is currently unavailable. Please call, email or try again later.</p>";
 				}
 			}
 		}
