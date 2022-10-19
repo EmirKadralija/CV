@@ -24,6 +24,7 @@ position: relative;
 	 bottom: 21px;
   }
 
+
 .bottomBit{
     background-color: #537ec5;
     margin: 0;
@@ -39,10 +40,13 @@ position: relative;
   }
 
 #ob-container{
-	width:80%;
+	width:50%;
 	margin:auto;
 		
 }
+#ob-container-2{
+	width:50%;
+	margin:auto;
   /*------------------------------------*\
 	Text Styling
   \*------------------------------------*/
