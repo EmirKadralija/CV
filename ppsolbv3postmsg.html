@@ -69,10 +69,11 @@
 
 	<script>
 		window.addEventListener('message', (message) => {
-  if (message.origin == 'https://ob.rushcliff.com' && message.data == 'iframe-loaded') {
-    console.log('message received');
-    let pageData = {
-      name: 'expressUpgrade',
+  		if (message.origin == 'https://ob.rushcliff.com' && message.data == 'iframe-loaded') {
+    	console.log('message received from child');
+    	
+		let pageData = {
+      	name: 'expressUpgrade',
     };
 
     let onlineBookingIframe = document.getElementById('ob-container').getElementsByTagName('iframe')[0].contentWindow;
@@ -80,13 +81,6 @@
   }
 });
 
-let pageData = {
-      name: 'expressUpgrade',
-    };
-	
-    let onlineBookingIframe = document.getElementById('ob-container').getElementsByTagName('iframe')[0].contentWindow;
-    onlineBookingIframe.postMessage(pageData, 'https://emirkadralija.github.io');
-		
 	  </script>
 </footer>
 
