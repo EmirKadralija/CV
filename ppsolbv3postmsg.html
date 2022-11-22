@@ -66,11 +66,12 @@
 		xhr.send();
 	})();
 	</script>
+
 	<script>
 		window.onload = function () {
 		console.log('loaded');
 		var iframeWin = document.getElementById("ob-container").contentWindow;
-
+		let myMessage = "Why Hello There";
 		iframeWin.postMessage(myMessage.value, "https://emirkadralija.github.io");
 		return false;
 	};
