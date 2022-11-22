@@ -13,7 +13,8 @@ position: relative;
 	font-family: 'PT Sans', sans-serif;
 }
 #postMessageDiv{
-  height: 100px;
+  text-align: center;
+  height: 200px;
 }
 
 #topSection{
