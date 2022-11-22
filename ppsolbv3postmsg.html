@@ -5,21 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/PPSOLB/style.css">
-  <script>
-
-	window.onload = function () {
-	let iframeWin = document.getElementById("ob-booking").contentWindow,
-		form = document.getElementById("the-form"),
-		myMessage = document.getElementById("my-message");
-
-	myMessage.select();
-
-	form.onsubmit = function () {
-		iframeWin.postMessage(myMessage.value, "https://emirkadralija.github.io");
-		return false;
-	};
-};
-  </script>
+  
 </head>
 <body>
 	<div id="topSection">
@@ -83,6 +69,20 @@
 		xhr.send();
 	})();
 	</script>
+	<script>
+		window.onload = function () {
+		let iframeWin = document.getElementById("ob-booking").contentWindow,
+			form = document.getElementById("the-form"),
+			myMessage = document.getElementById("my-message");
+	
+		myMessage.select();
+	
+		form.onsubmit = function () {
+			iframeWin.postMessage(myMessage.value, "https://emirkadralija.github.io");
+			return false;
+		};
+	};
+	  </script>
 </footer>
 
 </html>
