@@ -12,6 +12,9 @@ position: relative;
 	bottom: 21px;
 	font-family: 'PT Sans', sans-serif;
 }
+#postMessageDiv{
+  height: 100px;
+}
 
 #topSection{
  background-color: #537ec5;
