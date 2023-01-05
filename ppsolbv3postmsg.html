@@ -68,11 +68,8 @@
 	</script>
 
 	<script>
-		window.addEventListener('message', function(event) {
-  if (event.origin === 'https://ob.rushcliff.com') {
-    console.log('Received message from child window:', event.data);
-  }
-});
+		var iframe = document.getElementById('ob-booking');
+iframe.contentWindow.postMessage('Hello from the parent window!', 'https://ob.rushcliff.com');
 
 	  </script>
 </footer>
