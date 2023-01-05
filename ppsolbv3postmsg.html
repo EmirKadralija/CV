@@ -77,7 +77,7 @@ var observer = new MutationObserver(function(mutations) {
     // Check if the mutation added a new iframe element
     if (mutation.addedNodes.length > 0 && mutation.addedNodes[0].tagName === 'IFRAME') {
       // The iframe element has been added, so send the message
-      mutation.addedNodes[0].contentWindow.postMessage('Hello from the parent window!', 'https://ob.rushcliff.com');
+      mutation.addedNodes[0].contentWindow.postMessage('Hello from the parent window!', 'https://emirkadralija.github.io');
     }
   });
 });
