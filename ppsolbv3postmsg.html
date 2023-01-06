@@ -5,39 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/PPSOLB/style.css">
-<script>
-	(function (logger) {
-    console.old = console.log;
-    console.log = function () {
-        var output = "", arg, i;
-
-        for (i = 0; i < arguments.length; i++) {
-            arg = arguments[i];
-            output += "<span class=\"log-" + (typeof arg) + "\">";
-
-            if (
-                typeof arg === "object" &&
-                typeof JSON === "object" &&
-                typeof JSON.stringify === "function"
-            ) {
-                output += JSON.stringify(arg);   
-            } else {
-                output += arg;   
-            }
-
-            output += "</span>&nbsp;";
-        }
-
-        logger.innerHTML += output + "<br>";
-        console.old.apply(undefined, arguments);
-    };
-})(document.getElementById("logger"));
-
-	</script>	
 </head>
 <body>
 	<h1 id="postMsgPage">postMessage Method Test Example</h1>
-	<pre id="logger"></pre>
     		<div id="ob-container">
 		</div>
 
