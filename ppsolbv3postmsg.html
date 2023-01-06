@@ -5,48 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/PPSOLB/style.css">
-  
 </head>
 <body>
-	<div id="topSection">
-		<h1 class="h1Main"> Online Booking v3/4 </h1>
-    		<hr class="hrCust">
-    		<ul class="navBar">
-    		<a href="/PPSOLB/index.html" class="aOlbCust">
-    		<li> Home Page </li>
-			</a>
-			<a href="/PPSOLB/ppsolbv3.html" class="aOlbCust">
-			<li> PPS Online Booking V3/4</li></a>
-			<a href="/PPSOLB/ppsolbv3postmsg.html" class="aOlbCust">
-				<li>PPS Online Booking Post Message</li></a>
-			<a href="/PPSOLB/ppsolbv5.html" class="aOlbCust">
-			<li> PPS Online Booking V5</li></a>
-		</a></li>
-    		</a></li>
-   		 </ul>
-    		<hr class="hrCust">
-    	<h2 class="h2Cust"> Please complete your booking below</h2>
-  </div>
-  <div id="postMessageDiv">
-	<h1>Post Message Example</h1>
-	<p>Interacting with an iframe, cross domain using the postMessage() method.</p>
-
-  </div>
-	<div id="midSection">
+	
     		<div id="ob-container">
-			
-    	</div>
+		</div>
 
 </body>
 <!-- TEST -->
 <footer>
-	
 	<script type="text/javascript">
 	function ppsOnlineBooking() {
 		new OnlineBooking({
 			container: "ob-container", 
 			id: 222222,
-			
 		});
 	}
 	(function() {
@@ -65,30 +37,6 @@
 		}
 		xhr.send();
 	})();
-	</script>
-
-	<script>
-	// Select the target element that you want to monitor for changes
-var target = document.getElementById('ob-container');
-
-// Create an observer instance
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    // Check if the mutation added a new iframe element
-    if (mutation.addedNodes.length > 0 && mutation.addedNodes[0].tagName === 'IFRAME') {
-      // The iframe element has been added, so send the message
-      mutation.addedNodes[0].contentWindow.postMessage('Hello from the parent window!', 'https://emirkadralija.github.io');
-    }
-  });
-});
-
-// Configure the observer
-var config = { attributes: true, childList: true, subtree: true };
-
-// Start observing the target
-observer.observe(target, config);
-
-	  </script>
 </footer>
 
 </html>
