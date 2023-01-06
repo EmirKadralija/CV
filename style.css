@@ -5,6 +5,13 @@ html, body {
   width: 100%;
 }
 
+body {background: #333;}
+.log-boolean,
+.log-undefined {color: magenta;}
+.log-object,
+.log-string {color: orange;}
+.log-number {color: cyan;}
+
 body{
 position: relative;
 	margin: 0;
